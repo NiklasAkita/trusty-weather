@@ -44,6 +44,7 @@ export class WeatherHandler {
 
 	constructor() {}
 
+	// could allow input to change coords, in case other locations should be added.
 	public async updateWeatherData() {
 		const responses = await fetchWeatherApi(this.url, this.params);
 
